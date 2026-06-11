@@ -30,6 +30,16 @@ WhatsApp'ta silinen mesajları ve fotoğrafları kurtaran Android uygulaması.
 3. APK dosyasına dokunarak kurulumu tamamlayın
 4. Uygulama açılınca **Bildirim Erişimi** iznini verin
 
+Alternatif Sorunlar
+Uygulama kurulurken Play Store dışından yüklenen her imzasız/bilinmeyen APK için Google Play Protect böyle uyarı veriyor. Zararlı bir şey yok.
+
+Anladım'a basın.
+Tekrar kurulum ekranına gelince "Yine de yükle" veya "Devam et" seçeneği çıkacak, ona basın.
+
+Eğer o seçenek çıkmazsa:
+Ayarlar → Uygulamalar → Play Protect → uyarıyı görmezden gel seçeneği olacak.
+Bu uyarı sadece ilk kurulumda çıkar, bir daha çıkmaz.
+
 ---
 
 ## 🚀 Nasıl Çalışır?
