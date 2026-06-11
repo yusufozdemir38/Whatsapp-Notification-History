@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- İzin Banner (izin yoksa gösterilir) -->
+    <LinearLayout
+        android:id="@+id/bannerPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWarning"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⚠️ Bildirim erişim izni gerekli. Ayarlar için dokunun."
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="›"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:paddingStart="8dp" />
+
+    </LinearLayout>
+
+    <!-- Ana İçerik -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Banner için alan (görünmese de yer tutar) -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/bannerSpacer" />
+
+        <!-- Boş durum -->
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="📭\n\nHenüz kayıtlı bildirim yok.\n\nWhatsApp'tan bir mesaj geldiğinde\nburada görünecek."
+            android:textAlignment="center"
+            android:textColor="@color/textSecondary"
+            android:textSize="15sp"
+            android:lineSpacingMultiplier="1.4"
+            android:visibility="gone" />
+
+        <!-- Bildirim Listesi -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="80dp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    <!-- Temizle butonu -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="Tümünü temizle"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        app:backgroundTint="@color/colorDanger"
+        app:tint="#FFFFFF" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

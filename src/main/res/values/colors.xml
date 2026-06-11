@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- WhatsApp yeşili -->
+    <color name="colorWhatsApp">#25D366</color>
+
+    <!-- Birincil renk (koyu yeşil) -->
+    <color name="colorPrimary">#128C7E</color>
+    <color name="colorPrimaryDark">#075E54</color>
+    <color name="colorAccent">#25D366</color>
+
+    <!-- Uyarı ve hata renkleri -->
+    <color name="colorWarning">#FF9800</color>
+    <color name="colorDanger">#F44336</color>
+
+    <!-- Arka plan -->
+    <color name="background">#F0F2F5</color>
+    <color name="cardBackground">#FFFFFF</color>
+
+    <!-- Metin renkleri -->
+    <color name="textPrimary">#1A1A1A</color>
+    <color name="textSecondary">#666666</color>
+    <color name="textHint">#AAAAAA</color>
+    <color name="deletedCardBackground">#FFEBEE</color>
+    <color name="deletedBadgeColor">#F44336</color> 
+</resources>

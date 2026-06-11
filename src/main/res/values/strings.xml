@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WA Bildirim Geçmişi</string>
+    <string name="service_label">WhatsApp Bildirim Dinleyici</string>
+    <string name="permission_required">Bildirim erişim izni gerekli</string>
+    <string name="permission_message">WhatsApp bildirimlerini kaydetmek için bildirim erişim iznini etkinleştirin.</string>
+    <string name="go_to_settings">Ayarlara Git</string>
+    <string name="cancel">İptal</string>
+    <string name="settings">Ayarlar</string>
+    <string name="clear_all">Tümünü Temizle</string>
+    <string name="no_notifications">Henüz bildirim yok</string>
+</resources>

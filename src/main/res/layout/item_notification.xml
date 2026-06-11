@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/cardBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Üst satır: ikon + içerik + sil -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Mesaj tipi ikonu -->
+            <ImageView
+                android:id="@+id/ivMessageIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_message"
+                android:tint="@color/colorWhatsApp"
+                android:contentDescription="Mesaj türü" />
+
+            <!-- Mesaj içeriği -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp">
+
+                <!-- Gönderen + Rozet -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvSender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/textPrimary"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="Kişi Adı" />
+
+                    <TextView
+                        android:id="@+id/tvGroupBadge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GRUP"
+                        android:textSize="9sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/badge_background"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="2dp"
+                        android:layout_marginStart="6dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <!-- Mesaj metni -->
+                <TextView
+                    android:id="@+id/tvMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/textSecondary"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginTop="3dp"
+                    android:text="Mesaj içeriği burada görünür..." />
+
+                <!-- Zaman -->
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/textHint"
+                    android:layout_marginTop="4dp"
+                    android:text="14:35" />
+
+            </LinearLayout>
+
+            <!-- Sil butonu -->
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:tint="@color/textHint"
+                android:padding="4dp"
+                android:contentDescription="Sil"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+
+        </LinearLayout>
+
+        <!-- Fotoğraf thumbnail (sadece imagePath varsa gösterilir) -->
+        <ImageView
+            android:id="@+id/ivThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:background="#F5F5F5"
+            android:contentDescription="Kaydedilen fotoğraf" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
